@@ -9,15 +9,12 @@ function love.load()
     love.graphics.setNewFont(12)
     love.graphics.setColor(255,255,255)
     love.graphics.setBackgroundColor(0,0,0)
-
-    -- push initial state
-    main.state_manager:push_state(title_state)
 end
 
 function love.update()
-    main.state_manager.tick()
+    main.state_manager:tick()
 end
 
 function love.draw()
-    love.graphics.draw(main.state_manager.draw())
+    love.graphics.draw(main.state_manager:draw())
 end
