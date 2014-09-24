@@ -1,4 +1,4 @@
-package.path = ";../../?.lua"
+package.path = "../../?.lua;" .. package.path
 GameState = require "class/states/gamestate"
 Title = GameState:extends ()
 

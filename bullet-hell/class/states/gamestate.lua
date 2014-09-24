@@ -1,4 +1,4 @@
-package.path = ";../../?.lua"
+package.path = "../../?.lua;" .. package.path
 class = require "lib/30log/30log"
 
 GameState = class()
