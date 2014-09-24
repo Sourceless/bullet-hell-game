@@ -45,7 +45,7 @@ function StateManager:tick()
     -- special because states can be stacked, and one drawn
     -- underneath another.
     if self:any() then
-        self:top().tick()
+        self:top():tick()
     end
 end
 
